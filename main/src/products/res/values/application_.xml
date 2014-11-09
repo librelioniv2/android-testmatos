@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
 
+    <string name="app_name">Override this in product flavor folders</string>
     <string name="yearly_subs_code">yearlysubscription</string>
     <string name="monthly_subs_code">monthlysubscription</string>
     <bool name="enable_code_subs">false</bool>
