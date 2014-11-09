@@ -131,8 +131,12 @@ public class ProductDetailFragment extends BaseNivealesFragment {
 	}
 
 	String getHTMLPage(Cursor c) {
-		productId = c.getString(c.getColumnIndexOrThrow("id_modele"));
-		String htmlString = new String(htmlBasePage);
+        int idModeleColumnIndex = c.getColumnIndex("id_modele");
+        if (idModeleColumnIndex == -1) {
+            idModeleColumnIndex = c.getColumnIndexOrThrow("Id_modele");
+        }
+        productId = c.getString(idModeleColumnIndex);
+        String htmlString = new String(htmlBasePage);
 		for (int i = 0; i < columnKeys.length; i++) {
 			int columnIndex = c.getColumnIndex(columnKeys[i]);
 			if (columnIndex != -1) {
