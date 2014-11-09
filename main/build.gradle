@@ -27,17 +27,8 @@ android {
 
     productFlavors {
 
-        magazines {
-            flavorDimension "type"
-        }
-
         products {
             flavorDimension "type"
-        }
-
-        magazine {
-            applicationId "com.niveales.wind"
-            flavorDimension "name"
         }
 
         testskis {
